@@ -1,0 +1,22 @@
+Unhandled Exception: (MySQLdb.ProgrammingError) (1146, "Table 'mydatabase.user' doesn't exist")
+[SQL: SELECT user.id AS user_id, user.name AS user_name, user.email AS user_email, user.password AS user_password, user.reputation AS user_reputation, user.join_date AS user_join_date, user.profile_info AS user_profile_info 
+FROM user 
+WHERE user.email = %s 
+ LIMIT %s]
+[parameters: ('test@example.com', 1)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Error registering user: (MySQLdb.ProgrammingError) (1146, "Table 'mydatabase.user' doesn't exist")
+[SQL: SELECT user.id AS user_id, user.name AS user_name, user.email AS user_email, user.password AS user_password, user.reputation AS user_reputation, user.join_date AS user_join_date, user.profile_info AS user_profile_info 
+FROM user 
+WHERE user.email = %s 
+ LIMIT %s]
+[parameters: ('test@example.com', 1)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Error registering user: (MySQLdb.ProgrammingError) (1146, "Table 'mydatabase.user' doesn't exist")
+[SQL: SELECT user.id AS user_id, user.name AS user_name, user.email AS user_email, user.password AS user_password, user.reputation AS user_reputation, user.join_date AS user_join_date, user.profile_info AS user_profile_info 
+FROM user 
+WHERE user.email = %s 
+ LIMIT %s]
+[parameters: ('test@example.com', 1)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Unhandled Exception: 405 Method Not Allowed: The method is not allowed for the requested URL.
