@@ -1,0 +1,15 @@
+<h2>My Questions</h2>
+
+<div *ngIf="errorMessage" class="error">
+  {{ errorMessage }}
+</div>
+
+<div *ngIf="questions.length === 0 && !errorMessage">
+  No questions found.
+</div>
+
+<div *ngFor="let question of questions">
+  <h3>{{ question.title }}</h3>
+  <p>{{ question.body }}</p>
+  <p>Created Date: {{ question.creation_date }}</p>
+</div>

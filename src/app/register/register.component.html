@@ -1,0 +1,15 @@
+<div *ngIf="registerForm.get('name')?.errors?.['required'] && registerForm.get('name')?.touched">
+  Name is required.
+</div>
+<div *ngIf="registerForm.get('email')?.errors?.['required'] && registerForm.get('email')?.touched">
+  Email is required.
+</div>
+<div *ngIf="registerForm.get('email')?.errors?.['email'] && registerForm.get('email')?.touched">
+  Enter a valid email.
+</div>
+<div *ngIf="registerForm.get('password')?.errors?.['required'] && registerForm.get('password')?.touched">
+  Password is required.
+</div>
+<div *ngIf="registerForm.get('password')?.errors?.['minlength'] && registerForm.get('password')?.touched">
+  Password must be at least 6 characters.
+</div>

@@ -1,0 +1,11 @@
+<h2>Dashboard</h2>
+
+<div *ngIf="userData">
+  <p>Name: {{ userData.name }}</p>
+  <p>Email: {{ userData.email }}</p>
+  <p>Reputation: {{ userData.reputation }}</p>
+  <p>Join Date: {{ userData.join_date }}</p>
+  <p>Profile Info: {{ userData.profile_info }}</p>
+</div>
+
+<button (click)="logout()">Logout</button>
